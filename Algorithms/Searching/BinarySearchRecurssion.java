@@ -1,6 +1,6 @@
 import java.util.Scanner;
 class BinarySearchRecurssion{
-	static int BinarySearch(int key,int arr[],int left,int right){
+	static int binarySearch(int key,int arr[],int left,int right){
 		if(left<=right){
 			int mid=(left+right)/2;
 			if(arr[mid]==key){
@@ -30,7 +30,7 @@ class BinarySearchRecurssion{
 		}
 		System.out.println("\nEnter Key to Search:");
 		int key=sc.nextInt();
-		int res=BinarySearch(key,arr,0,arr.length-1);
+		int res=binarySearch(key,arr,0,arr.length-1);
 		if(res!=-1){
 			System.out.println(key+" Found at a["+res+"]");
 		}
@@ -38,4 +38,5 @@ class BinarySearchRecurssion{
           System.out.println(key+" Not Found!");
 		}
 	}
+
 }
